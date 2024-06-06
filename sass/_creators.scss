@@ -1,0 +1,109 @@
+.creators{
+        display: flex;
+        flex-direction: column;
+            width: 100%;
+            padding: 80px 120px;
+            color: #FFFF;
+            justify-content: space-between;
+            gap: 20px;
+            .creators__title {
+                    h1 {
+                        font-size: 38px;
+                        font-weight: 600;
+                        line-height: 45.6px;
+                    }
+            
+                    p {
+            
+                        font-size: 22px;
+                        font-weight: 400;
+                        line-height: 35.2px;
+            
+                    }
+                }
+            .creators__cards{
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                gap: 30px;
+                .creators__card{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    background-color: #3B3B3B;
+                    border-radius: 20px;
+                    padding:20px 10px;
+                    gap: 10px;
+h2{
+
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 30.8px;
+    
+}
+p{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22.4px;
+  color: #858584;
+span {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22.4px;
+color: #FFFF;
+    }
+}
+
+
+
+                }
+            }
+}
+
+@media (max-width:1200px) {
+    .creators{
+        padding: 60px 100px;
+
+        .creators__cards{
+            grid-template-columns: repeat(2,1fr);
+          
+            .creators__card {
+                  flex-direction: row;
+
+
+                }
+        }
+                
+    }
+}
+@media (max-width:1024px) {
+    .creators{
+        padding: 40px 80px;
+
+        .creators__cards{
+            grid-template-columns: repeat(1,1fr);
+          
+        }
+                
+    }
+}
+
+@media (max-width:576px) {
+    .creators{
+        padding: 30px 60px;
+
+        .creators__cards{
+            grid-template-columns: repeat(1,1fr);
+            .creators__card{
+                h2{
+                    font-size: 18px;
+                }
+                img{
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+          
+        }
+                
+    }
+}
