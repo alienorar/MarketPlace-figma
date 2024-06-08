@@ -2,15 +2,17 @@
         display: flex;
         flex-direction: column;
             width: 100%;
-            padding: 80px 120px;
+            padding:  30px;
             color: #FFFF;
             justify-content: space-between;
             gap: 20px;
             .creators__title {
+                padding: 20px;
                     h1 {
                         font-size: 38px;
                         font-weight: 600;
                         line-height: 45.6px;
+                        text-align: center;
                     }
             
                     p {
@@ -18,12 +20,12 @@
                         font-size: 22px;
                         font-weight: 400;
                         line-height: 35.2px;
-            
+            text-align: center;
                     }
                 }
             .creators__cards{
                 display: grid;
-                grid-template-columns: repeat(4,1fr);
+                // grid-template-columns: repeat(4,1fr);
                 gap: 30px;
                 .creators__card{
                     display: flex;
@@ -59,9 +61,30 @@ color: #FFFF;
             }
 }
 
-@media (max-width:1200px) {
+
+@media (min-width:576px) {
+    .creators {
+        padding: 0 40px;
+
+        .creators__cards {
+            grid-template-columns: repeat(1, 1fr);
+
+            .creators__card {
+               flex-direction: row;
+                h2 {
+                    font-size: 18px;
+                }
+
+               
+            }
+
+        }
+
+    }
+}
+@media (min-width:768px) {
     .creators{
-        padding: 60px 100px;
+        padding: 0 40px;
 
         .creators__cards{
             grid-template-columns: repeat(2,1fr);
@@ -75,33 +98,23 @@ color: #FFFF;
                 
     }
 }
-@media (max-width:1024px) {
+@media (min-width:992px) {
     .creators{
-        padding: 40px 80px;
+        padding: 0 60px;
 
         .creators__cards{
-            grid-template-columns: repeat(1,1fr);
+            grid-template-columns: repeat(2,1fr);
           
         }
                 
     }
 }
-
-@media (max-width:576px) {
+@media (min-width:1024px) {
     .creators{
-        padding: 30px 60px;
+        padding: 0 60px;
 
         .creators__cards{
-            grid-template-columns: repeat(1,1fr);
-            .creators__card{
-                h2{
-                    font-size: 18px;
-                }
-                img{
-                    width: 100px;
-                    height: 100px;
-                }
-            }
+            grid-template-columns: repeat(3,1fr);
           
         }
                 

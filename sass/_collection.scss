@@ -1,6 +1,6 @@
 
 .collection{
-    padding: 80px 120px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     color: #FFFFFF;
@@ -23,8 +23,9 @@
     }
     .collection__cards{
    display: grid;
-   grid-template-columns: repeat(3,1fr);
+//    grid-template-columns: repeat(3,1fr);
    gap: 30px;
+
 
     }
     .animals{
@@ -44,41 +45,72 @@ justify-content: space-around;
     }
 }
 
-@media (max-width:1400px) {
-   .collection {
-        padding: 60px 100px;
-      
+@media (min-width:567px) {
+    .collection {
+        padding:  60px;
+
+.collection__cards{
+    grid-template-columns: repeat(1,1fr);
+}
     }
 }
-@media (max-width:1024px) {
-   .collection {
+@media (min-width:768px) {
+    .collection {
+        padding: 60px;
+
+.collection__cards{
+    grid-template-columns: repeat(2,1fr);
+}
+    }
+}
+@media (min-width:992px) {
+    .collection {
+        padding: 60px;
+
+.collection__cards{
+    grid-template-columns: repeat(2,1fr);
+}
+    }
+}
+
+
+@media (min-width:1024px) {
+    .collection {
         padding: 40px 80px;
+
         .collection__title {
-        
-                h1 {
-                    font-size: 34px;
-                    text-align: center;
-                }
-        
-                p {
-                    text-align: center;
-                    font-size: 20px;
-        
-        
-                }
+
+            h1 {
+                font-size: 34px;
+                text-align: center;
             }
-        
-            .collection__cards {
-                grid-template-columns: repeat(2,1fr);
+
+            p {
+                text-align: center;
+                font-size: 20px;
+
+
             }
-    }
-}
-@media (max-width:992px) {
-   .collection {
-        padding: 30px 60px;
+        }
 
         .collection__cards {
-                grid-template-columns: repeat(1, 1fr);
-            }
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 }
+@media (min-width:1200px) {
+    .collection {
+        padding: 40px 80px;
+
+    
+        .collection__cards {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+
+
+
+
+

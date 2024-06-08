@@ -1,0 +1,121 @@
+.categories{
+    display: flex;
+    flex-direction: column;
+    color: #FFFF;
+    padding: 60px;
+    gap: 10px;
+    h1{
+        padding: 20px;
+        text-align: center;
+    }
+.categories__cards{
+    display: grid;
+    // grid-template-columns: repeat(4,2fr);
+    gap: 40px;
+
+    .categories__card{
+        width: 100%;
+      background-color: #3B3B3B;
+      border-radius: 40px;
+     
+  overflow: hidden;
+        .cc-img{
+           position: relative;
+            img{
+                width:100%;
+            }
+
+    span{
+      position: absolute;
+        font-size: 60px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(8px);
+        transform: scale(0);
+        transition: all 0.4s ease-in-out;
+    }
+        }
+  
+&:hover span {
+   
+    transform: scale(1);
+}
+
+
+}
+.categories__card-desc{
+    padding: 20px;
+    text-align: center;
+}
+    }
+}
+
+
+@media (min-width:300px) {
+    .categories {
+
+        .categories__cards {
+    
+        .categories__card{
+            width: 100%;
+        }
+        }
+    }
+}
+@media (min-width:567px) {
+    .categories {
+        padding: 40px;
+        .categories__cards {
+            grid-template-columns: repeat(2, 1fr);
+        .categories__card{
+            width: 100%;
+        }
+        }
+    }
+}
+@media (min-width:992px) {
+    .categories {
+        padding: 40px;
+        .categories__cards {
+            grid-template-columns: repeat(3, 1fr);
+        .categories__card{
+            width: 100%;
+.cc-img {
+    }
+        }
+        }
+    }
+}
+// @media (min-width:1024px) {
+//     .categories {
+    
+//         .categories__cards {
+//             grid-template-columns: repeat(3, 1fr);
+//         .categories__card{
+//             width: 100%;
+//             .cc-img {
+//                     span {
+//                         top: 80px;
+//                         left: 140px;
+//                     }
+//                 }
+//         }
+//         }
+//     }
+// }
+@media (min-width:1200px) {
+    .categories {
+    
+        .categories__cards {
+            grid-template-columns: repeat(4, 1fr);
+        .categories__card{
+            width: 100%;
+        }
+        }
+    }
+}
