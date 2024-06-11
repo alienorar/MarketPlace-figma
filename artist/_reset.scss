@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: Work Sans;
+}
+
+body {
+    background-color: #2B2B2B;
+
+    button {
+        cursor: pointer;
+    }
+}
+
+@font-face {
+    font-family: Work Sans;
+    src: url(../Work_Sans/static/WorkSans-Light.ttf);
+}
