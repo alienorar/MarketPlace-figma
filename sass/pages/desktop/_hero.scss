@@ -1,0 +1,9 @@
+.hero{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .hero-inp{
+        width: 100%;
+        background-color: aquamarine;
+    }
+}       

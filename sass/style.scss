@@ -1,9 +1,3 @@
-@use"./reset";
-@use"./header";
-@use"./hero";
-@use"./collection";
-@use"./creators";
-@use"./categories";
-@use"./descover";
-@use"./magic";
-@use"./footer";
+@use"./pages/home/home";
+@use"./pages/tablet/tablet";
+@use"./pages/desktop/desktop";
